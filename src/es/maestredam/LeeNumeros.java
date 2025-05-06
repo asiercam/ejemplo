@@ -1,6 +1,7 @@
 package es.maestredam;
 
 import java.io.DataInputStream;
+import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,12 +27,11 @@ public class LeeNumeros {
 			
 		}catch (FileNotFoundException fne) {
 			System.out.println("Archivo no encontrado"+fne);
-		}
-		
-		catch (IOException ioe) {
+		}catch (EOFException eof) {
+			System.out.println("[FIN]");
+		}catch (IOException ioe) {
 			System.out.println("ERROR E/S "+ioe);
 		}
-
 	}
 
 }
