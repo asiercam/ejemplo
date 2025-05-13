@@ -1,6 +1,9 @@
 package es.maestredam;
 import java.io.File;
 
+/**
+ *  Práctica de Git/ Entornos
+ */
 public class FUtil {
 
 	public static boolean existe(String filename) {
