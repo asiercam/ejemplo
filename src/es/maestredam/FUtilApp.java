@@ -5,7 +5,8 @@ public class FUtilApp {
         String[] archivos = {
             "texto1.txt",
             "carpeta",
-            "inexistente.docx"
+            "inexistente.docx",
+            " "
         };
 
         for (String archivo : archivos) {
